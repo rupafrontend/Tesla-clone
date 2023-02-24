@@ -1,0 +1,69 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap');
+
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body{
+    font-size: 62.5%;
+    font-family: 'Montserrat', sans-serif;;
+}
+
+@media (max-width:600px) {
+    html{
+        font-size: 60%;
+    }
+    
+}
+@layer components{
+    .nav-links{
+        @apply text-[1.1rem] font-semibold  text-slate-900 px-3 py-2 md:bg-transparent duration-400 bg-opacity-40  hover:bg-slate-900 rounded-[0.3rem]
+    }
+
+    .car-section{
+        @apply w-full h-screen
+            
+
+        
+    }
+
+    .car-models{
+       @apply w-full h-full object-cover
+    }
+
+    .car-content{
+        @apply absolute top-[20%] left-[50%] translate-x-[-50%] translate-y-[-50%] text-center
+
+    }
+
+    .model-name{
+        @apply text-[3rem] font-semibold text-slate-900
+    }
+
+    .car-pricing{
+        @apply text-xl text-slate-900
+    }
+
+    .header-btn{
+        @apply absolute top-[82%] left-[50%] translate-x-[-50%] translate-y-[-50%] text-center
+
+    }
+    .btn{
+        @apply text-[1rem]  text-center text-white bg-gray-700 inline-block font-light w-[15rem] h-12 font-semibold rounded-[.4rem] px-10 pt-3 mx-1 my-3
+    }
+
+    .demo{
+       @apply bg-slate-100 text-slate-900
+
+
+    
+    }
+
+    .chevron{
+        @apply  absolute bottom-[-98%] left-[50%] translate-x-[-50%] translate-y-[-50%] text-center 
+    }
+ 
+
+}
